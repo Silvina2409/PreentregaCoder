@@ -1,4 +1,33 @@
-const usuario = prompt ("Ingrese su usuario") // El usuario es juan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const usuario = prompt ("Ingrese su usuario") // El usuario es juan
 const contrasena = prompt ("Ingrese su contraseña") // La contraseña es 1234
 
 const Registrar = () =>{
@@ -46,4 +75,4 @@ function Confirmar (){
     }else {
         alert ("Usuario y/o contraseña incorrectos, no puede ingresar")
 }}
-Confirmar()      
+Confirmar()*/      
