@@ -1,5 +1,40 @@
+const profesionales= [
+    {
+        nombre: "Juana Fernandez ",
+        especialidad: "Pediatría General",
+        imagen: "./Img/modificaciondra.jpg"
 
+    },
+    {
+        nombre: "Alejandro Martinez",
+        especialidad: "Oftalmología",
+        imagen: "./Img/modificaciondr.jpg"
+    },
+    {
+        nombre: "Florencia Marchetto",
+        especialidad: "Neumonología",
+        imagen: "./Img/modificaciondra2.jpg"
+    },
+    {
+        nombre: "Pablo Moreno",
+        especialidad: "Neonatología",
+        imagen: "./Img/modificaciondra2.jpg"
+    }
+]
 
+const listaProfesionales = document.getElementById("listaProfesionales")
+profesionales.forEach((profesional) =>{
+    let contenedor= document.createElement("p");
+    contenedor.innerHTML= `  <div class= "alineacion4">
+                                
+                            <img src= " ${profesional.imagen}" class="imagendra"> 
+                            <div class= "alineacion5" > 
+                            <h4 class="nombre"> ${profesional.nombre} </h4>                          
+                            <h4 class="especialidad" > Especialidad: ${profesional.especialidad} </h4> 
+                            <a href="#" class="cv" > Ver CV </a>
+                            </div> </div>                                `
+    listaProfesionales.appendChild(contenedor)                                                        
+})
 
 
 
