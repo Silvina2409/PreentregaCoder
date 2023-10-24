@@ -99,15 +99,15 @@ li{
 }
 .nombre{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 .especialidad{
-    font-size: 15px;
+    font-size: 18px;
 }
 .cv{
     text-decoration: none;
     color: black;
-   
+    font-size: 15px;
     border: 1px solid rgb(135, 183, 245);
-    padding: 5px;
+    padding: 10px;
 }

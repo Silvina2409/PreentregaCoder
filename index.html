@@ -38,12 +38,66 @@
         <div class="alineacion3">
             <img src="./Img/pediatria (1).png" alt="dibujo de un bebe" class="imagen1" width="100px">
             <h3 class="titulo"> Nuestros profesionales</h3>
-            <p class="texto1"> Contamos con un grupo de médicos con gran experiencia.  </p>
+            <p class="texto1"> Contamos con un staff de médicos con gran experiencia.  </p>
            
             <div id="listaProfesionales">
 
             </div>
         </div>
+        <div class="alineacion3"> 
+            <img src="./Img/contact.png" alt="dibujo de contacto" class="imagen1" width="100px">
+            <h3 class="titulo"> Formulario de Contacto</h3>
+            <p class="texto1"> Nos pondremos en contacto a la brevedad </p>
+           
+
+        </div>
+        <form action="mailto= silvi@gfd.com" method="POST">
+            <div class="formulario1">
+                <div>
+                    <label for="Nombreusuario"> Nombre del paciente: </label>  
+                    <input type="text" id="Nombreusuario" placeholder="Escriba el nombre del paciente"/>
+                </div>
+                <div>
+                    <label for="Apellido"> Apellido del paciente: </label>
+                    <input type="text" id="Apellido" placeholder="Escriba el apellido del paciente"/>
+                </div>   
+                <div>
+                    <label for="Edad"> Edad del paciente: </label>
+                    <input type="number" id="Edad" placeholder="Edad"/>
+                </div>   
+
+                <div>
+                    <label for="E-mail" class="formulario"> E-Mail de contacto: </label>  
+                    <input type="email" id="E-mail" placeholder="Escriba su E-mail"/>
+                </div>
+
+                <div>
+                    <label for="Especialidad"  >
+                    Indique cual es la especialidad que desea consultar:
+                    </label> 
+                    <label for="Pediatria" name="Especialidad">
+                    Pediatría General
+                    <input type="radio" id="Pediatria" name="Especialidad" value="Pediatria">
+                    </label> 
+                    <label for="Oftalmologia" name="Especialidad">
+                    Oftalmología
+                    <input type="radio" id="Oftalmologia" name="Especialidad" value="Oftalmologia"> 
+                    </label>
+                    <label for="Neumonologia" name="Especialidad">
+                    Neumonología
+                    <input type="radio" id="Neumonologia" name="Especialidad" value="Neumonologia">
+                    </label>   
+                    <label for="Neonatologia" name="Especialidad">
+                    Neonatología
+                    <input type="radio" id="Neonatologia" name="Especialidad" value="Neonatologia">
+                    </label>   
+                </div>
+                
+                <div>
+                    <button type="submit"> Enviar </button>
+                </div>
+            </div>
+        </form>
     </main>
     <script src="./script.js"> </script>
 </body>

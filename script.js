@@ -18,7 +18,7 @@ const profesionales= [
     {
         nombre: "Pablo Moreno",
         especialidad: "Neonatología",
-        imagen: "./Img/modificaciondra2.jpg"
+        imagen: "./Img/modificaciondr2.jpg"
     }
 ]
 
