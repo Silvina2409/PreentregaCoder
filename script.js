@@ -36,9 +36,44 @@ profesionales.forEach((profesional) =>{
     listaProfesionales.appendChild(contenedor)                                                        
 })
 
+const formulario = document.getElementById("formulario")
+formulario.addEventListener("submit", (e) =>{
+    crearPaciente(e)
+})
+function crearPaciente (e){
+    e.preventDefault()
+    let inputNombre= document.getElementById("Nombreusuario")
+    let inputApellido = document.getElementById("Apellido")
+    let inputEmail = document.getElementById("E-mail")
+    const user= {
+        nombre: inputNombre.value,
+        apellido: inputApellido.value,
+        email: inputEmail.value
+    }
+    console.log (user)
+
+    
+    let mensajePaciente = document.getElementById("mensajePaciente")
+    let textoNuevo = document.createElement("p")
+    mensajePaciente.appendChild(textoNuevo) 
+    textoNuevo.innerHTML= ` <p class="estiloMensaje" > Hola ${inputNombre.value}, a la brevedad nos pondremos en contacto con usted al siguente e-mail: ${inputEmail.value} Muchas gracias.</p> 
+    `
+    
 
 
-
+let conta= 0
+let suma= 0
+let compra= document.querySelector("#probando")
+compra.addEventListener("click",() =>{
+    let circulo= document.querySelector(".circulo")
+    conta ++
+    circulo.textContent= conta 
+    let agrego= document.querySelector("#total")
+    suma= suma + 5000
+    agrego.innerText = `El total a abonar es $ ${suma} Le escribiremos para programar su turno. Muchas gracias`
+    console.log (suma)
+    
+})
 
 
 
@@ -111,3 +146,5 @@ function Confirmar (){
         alert ("Usuario y/o contraseña incorrectos, no puede ingresar")
 }}
 Confirmar()*/      
+
+

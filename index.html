@@ -14,7 +14,7 @@
             <h1> Grupo Pediátrico Buenos Aires</h1>
         </div>
     </header>
-    <nav>
+    <nav >
         <ul>
             <li> <a href="#" class="arreglos"> Home</a> </li>
             <li> <a href="#" class="arreglos">  Nosotros </a> </li>
@@ -44,14 +44,16 @@
 
             </div>
         </div>
+        
         <div class="alineacion3"> 
             <img src="./Img/contact.png" alt="dibujo de contacto" class="imagen1" width="100px">
-            <h3 class="titulo"> Formulario de Contacto</h3>
-            <p class="texto1"> Nos pondremos en contacto a la brevedad </p>
+            <h3 class="titulo"> Formulario de Contactos</h3>
+           
            
 
         </div>
-        <form action="mailto= silvi@gfd.com" method="POST">
+        
+        <form action="mailto= silvi@gfd.com" id="formulario" method="POST">
             <div class="formulario1">
                 <div>
                     <label for="Nombreusuario"> Nombre del paciente: </label>  
@@ -67,7 +69,7 @@
                 </div>   
 
                 <div>
-                    <label for="E-mail" class="formulario"> E-Mail de contacto: </label>  
+                    <label for="E-mail" class="formulario2"> E-Mail de contacto: </label>  
                     <input type="email" id="E-mail" placeholder="Escriba su E-mail"/>
                 </div>
 
@@ -98,6 +100,15 @@
                 </div>
             </div>
         </form>
+        <div id="mensajePaciente"> </div>     
+        <div class="alineacion3"> 
+            <img src="./Img/family.png" alt="dibujo de contacto" class="imagen1" width="100px">
+            <h3 class="titulo"> Consultas</h3>
+            <p class="texto1"> En caso de querer realizar una consulta con nuestros profesionales hacer click aquí. El costo de la misma es de $5000.  </p>
+            <button id="probando"> Consulta </button>
+            <p  class="texto1" id="total"> </p>
+           
+
     </main>
     <script src="./script.js"> </script>
 </body>
