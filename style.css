@@ -115,5 +115,43 @@ li{
     color: black ;
     font-size: 20px;
     
-    margin: 50px;
+    
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.label{
+    font-size: 20px;
+}
+.inputs{
+    background-color:beige ;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 0.1vw 0.1vw #eeeeee;
+    padding-right: 400px;
+
+    
+}
+.alinear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+   
+}
+.btn-form{
+    background-color: beige;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px grey;
+    margin-bottom: 20px;
+
 }

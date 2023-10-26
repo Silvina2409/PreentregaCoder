@@ -56,9 +56,11 @@ function crearPaciente (e){
     let mensajePaciente = document.getElementById("mensajePaciente")
     let textoNuevo = document.createElement("p")
     mensajePaciente.appendChild(textoNuevo) 
-    textoNuevo.innerHTML= ` <p class="estiloMensaje" > Hola ${inputNombre.value}, a la brevedad nos pondremos en contacto con usted al siguente e-mail: ${inputEmail.value} Muchas gracias.</p> 
+    textoNuevo.innerHTML= ` <p class="estiloMensaje alinear" > Hola ${inputNombre.value}, a la brevedad nos pondremos en contacto con usted al siguente e-mail: ${inputEmail.value} Muchas gracias.</p> 
     `
-    
+    localStorage.setItem("Usuario",JSON.stringify(user))
+    formulario.reset()
+}
 
 
 let conta= 0
@@ -70,7 +72,7 @@ compra.addEventListener("click",() =>{
     circulo.textContent= conta 
     let agrego= document.querySelector("#total")
     suma= suma + 5000
-    agrego.innerText = `El total a abonar es $ ${suma} Le escribiremos para programar su turno. Muchas gracias`
+    agrego.innerText = `El total a abonar es $ ${suma}. Le escribiremos para programar su turno y realizar el pago. Muchas gracias.`
     console.log (suma)
     
 })
@@ -133,18 +135,18 @@ const Registrar = () =>{
     }
 alert (`El total a abonar es ${total} pesos`) 
     
-}
+}*/
 
 
 
 
-function Confirmar (){
+/*function Confirmar (){
     if (usuario == "juan" && contrasena == 1234){
         alert ("Usuario y contraseña correctos, puede ingresar")
         Registrar()
     }else {
         alert ("Usuario y/o contraseña incorrectos, no puede ingresar")
 }}
-Confirmar()*/      
+Confirmar()*/
 
 

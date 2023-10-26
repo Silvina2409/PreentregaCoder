@@ -54,59 +54,39 @@
         </div>
         
         <form action="mailto= silvi@gfd.com" id="formulario" method="POST">
-            <div class="formulario1">
-                <div>
-                    <label for="Nombreusuario"> Nombre del paciente: </label>  
-                    <input type="text" id="Nombreusuario" placeholder="Escriba el nombre del paciente"/>
-                </div>
-                <div>
-                    <label for="Apellido"> Apellido del paciente: </label>
-                    <input type="text" id="Apellido" placeholder="Escriba el apellido del paciente"/>
-                </div>   
-                <div>
-                    <label for="Edad"> Edad del paciente: </label>
-                    <input type="number" id="Edad" placeholder="Edad"/>
-                </div>   
+            <div class="alinear">
+               
+                    <div >
+                        <label for="Nombreusuario" class="label"> Nombre: </label>  
+                        <input type="text" class="inputs" id="Nombreusuario" placeholder="Escriba el nombre del paciente"/>
+                    </div>
+                    <div>
+                        <label for="Apellido" class="label"> Apellido:  </label>
+                        <input type="text" class="inputs" id="Apellido" placeholder="Escriba el apellido del paciente"/>
+                    </div>   
+                    <div>
+                        <label for="Edad"class="label" > Edad: </label>
+                        <input type="number" class="inputs" id="Edad" placeholder="Edad"/>
+                    </div>   
 
-                <div>
-                    <label for="E-mail" class="formulario2"> E-Mail de contacto: </label>  
-                    <input type="email" id="E-mail" placeholder="Escriba su E-mail"/>
-                </div>
-
-                <div>
-                    <label for="Especialidad"  >
-                    Indique cual es la especialidad que desea consultar:
-                    </label> 
-                    <label for="Pediatria" name="Especialidad">
-                    Pediatría General
-                    <input type="radio" id="Pediatria" name="Especialidad" value="Pediatria">
-                    </label> 
-                    <label for="Oftalmologia" name="Especialidad">
-                    Oftalmología
-                    <input type="radio" id="Oftalmologia" name="Especialidad" value="Oftalmologia"> 
-                    </label>
-                    <label for="Neumonologia" name="Especialidad">
-                    Neumonología
-                    <input type="radio" id="Neumonologia" name="Especialidad" value="Neumonologia">
-                    </label>   
-                    <label for="Neonatologia" name="Especialidad">
-                    Neonatología
-                    <input type="radio" id="Neonatologia" name="Especialidad" value="Neonatologia">
-                    </label>   
-                </div>
-                
-                <div>
-                    <button type="submit"> Enviar </button>
-                </div>
+                    <div>
+                        <label for="E-mail" class="label" class="formulario2" > E-Mail:  </label>  
+                        <input type="email" class="inputs" id="E-mail" placeholder="Escriba su E-mail"/>
+                    </div>
+                    <div>
+                        <button class="btn-form" type="submit"> Enviar </button>
+                    </div>
+                   
             </div>
         </form>
         <div id="mensajePaciente"> </div>     
         <div class="alineacion3"> 
             <img src="./Img/family.png" alt="dibujo de contacto" class="imagen1" width="100px">
-            <h3 class="titulo"> Consultas</h3>
+            <h3 class="titulo"> Consultas Médicas </h3>
             <p class="texto1"> En caso de querer realizar una consulta con nuestros profesionales hacer click aquí. El costo de la misma es de $5000.  </p>
-            <button id="probando"> Consulta </button>
+            <button id="probando" class="btn-form"> Consulta </button>
             <p  class="texto1" id="total"> </p>
+
            
 
     </main>
