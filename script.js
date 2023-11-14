@@ -69,7 +69,7 @@ let compra= document.querySelector("#probando")
 compra.addEventListener("click",() =>{
     let circulo= document.querySelector(".circulo")
     conta ++
-    circulo.textContent= conta 
+    circulo.innerHTML= conta 
     let agrego= document.querySelector("#total")
     suma= suma + 5000
     agrego.innerText = `El total a abonar es $ ${suma}. Le escribiremos para programar su turno y realizar el pago. Muchas gracias.`
@@ -77,7 +77,43 @@ compra.addEventListener("click",() =>{
     
 })
 
+//Buscador
 
+async function listarProfesionales () {
+    const respuesta = await fetch ("./profes.json")
+    const prof = await respuesta.json()
+    mostrarProfesionales (prof)
+}
+
+const contened = document.getElementById("contenedor")
+
+function mostrarProfesionales (arr){
+    arr.forEach((ele => {
+        let divMed = document.createElement ("div")
+        divMed.innerHTML= `<div> ${ele.nombre} </div>
+                           <div> ${ele.especialidad} </div> `
+    contened.appendChild (divMed)
+    //contened.innerHTML= ""
+      
+}))
+}
+listarProfesionales()
+
+
+
+const inputBusqueda= document.getElementById ("inputSearch")
+inputBusqueda.addEventListener ("change", () =>{
+    const inputV = inputBusqueda.value.toUpperCase()
+    console.log (inputV)
+    fetch ("./profes.json")
+    .then (response => response.json())
+    .then (data => {
+            const profesFiltrados = data.filter (prof =>{  
+                prof.nombre.includes (inputV)
+                mostrarProfesionales(profesFiltrados)
+        })})
+    }
+)
 
 
 

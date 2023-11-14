@@ -1,0 +1,58 @@
+[
+{
+    "id": 1,
+    "nombre": "Susana Perez",
+    "especialidad": "Gastroenterologia"
+},
+{
+    "id": 2,
+    "nombre": "Fabian Gomez",
+    "especialidad": "Neumonologia"
+},
+{   "id": 3,
+    "nombre": "Luciana Ramos",
+    "especialidad": "Pediatria"
+},
+{    "id": 4,
+    "nombre": "Ramiro Puertas",
+    "especialidad": "Infectologia"
+},
+{
+    "id": 5,
+    "nombre": "Alicia Roldan",
+    "especialidad": "Nutricionista"
+},
+{
+    "id": 6,
+    "nombre": "Lucas Fernandez",
+    "especialidad": "Neumonologia"
+},
+{
+    "id": 7,
+    "nombre": "Patricia Aranguren",
+    "especialidad": "Oftalmologia"
+},
+{
+    "id": 8,
+    "nombre": "Juana Fernandez ",
+    "especialidad": "Pediatría General"    
+},
+{
+    "id": 9,
+    "nombre": "Alejandro Martinez",
+    "especialidad": "Oftalmología"    
+},
+{
+    "id": 10,
+    "nombre": "Florencia Marchetto",
+    "especialidad": "Neumonología"
+    
+},
+{
+    "id": 11,
+    "nombre": "Pablo Moreno",
+    "especialidad": "Neonatología"
+    
+}
+
+]
