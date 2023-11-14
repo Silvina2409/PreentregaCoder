@@ -1,3 +1,4 @@
+//Listar medicos
 const profesionales= [
     {
         nombre: "Juana Fernandez ",
@@ -35,7 +36,7 @@ profesionales.forEach((profesional) =>{
                             </div> </div>                                `
     listaProfesionales.appendChild(contenedor)                                                        
 })
-
+//Formulario
 const formulario = document.getElementById("formulario")
 formulario.addEventListener("submit", (e) =>{
     crearPaciente(e)
@@ -50,7 +51,7 @@ function crearPaciente (e){
         apellido: inputApellido.value,
         email: inputEmail.value
     }
-    console.log (user)
+    
 
     
     let mensajePaciente = document.getElementById("mensajePaciente")
@@ -62,7 +63,8 @@ function crearPaciente (e){
     formulario.reset()
 }
 
-
+//Sumar especialidad
+function sumar (){
 let conta= 0
 let suma= 0
 let compra= document.querySelector("#probando")
@@ -73,9 +75,12 @@ compra.addEventListener("click",() =>{
     let agrego= document.querySelector("#total")
     suma= suma + 5000
     agrego.innerText = `El total a abonar es $ ${suma}. Le escribiremos para programar su turno y realizar el pago. Muchas gracias.`
-    console.log (suma)
+    
     
 })
+}
+sumar()
+
 
 //Buscador
 
@@ -87,33 +92,34 @@ async function listarProfesionales () {
 
 const contened = document.getElementById("contenedor")
 
-function mostrarProfesionales (arr){
-    arr.forEach((ele => {
+function mostrarProfesionales (prof){
+    
+    prof.forEach((ele => {
         let divMed = document.createElement ("div")
         divMed.innerHTML= `<div> ${ele.nombre} </div>
                            <div> ${ele.especialidad} </div> `
     contened.appendChild (divMed)
-    //contened.innerHTML= ""
-      
+  
 }))
 }
-listarProfesionales()
-
-
-
 const inputBusqueda= document.getElementById ("inputSearch")
 inputBusqueda.addEventListener ("change", () =>{
-    const inputV = inputBusqueda.value.toUpperCase()
+    const inputV = inputBusqueda.value
     console.log (inputV)
     fetch ("./profes.json")
     .then (response => response.json())
     .then (data => {
-            const profesFiltrados = data.filter (prof =>{  
-                prof.nombre.includes (inputV)
-                mostrarProfesionales(profesFiltrados)
-        })})
+        const profesionalesFiltrados = data.filter ((prof) => prof.especialidad.includes (inputV))
+        if (profesionalesFiltrados.length > 0){
+        mostrarProfesionales(profesionalesFiltrados)
+    }else{
+        contened.innerText = "Lamentablemente no contamos con esa especialidad"
     }
-)
+        
+    })    
+    
+})
+
 
 
 

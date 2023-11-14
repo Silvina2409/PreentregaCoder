@@ -1,57 +1,57 @@
 [
 {
     "id": 1,
-    "nombre": "Susana Perez",
+    "nombre": "DRA Susana Perez",
     "especialidad": "Gastroenterologia"
 },
 {
     "id": 2,
-    "nombre": "Fabian Gomez",
+    "nombre": "DR Fabian Gomez",
     "especialidad": "Neumonologia"
 },
 {   "id": 3,
-    "nombre": "Luciana Ramos",
-    "especialidad": "Pediatria"
+    "nombre": " DRA Luciana Ramos",
+    "especialidad": "Pediatria General"
 },
 {    "id": 4,
-    "nombre": "Ramiro Puertas",
+    "nombre": "DR Ramiro Puertas",
     "especialidad": "Infectologia"
 },
 {
     "id": 5,
-    "nombre": "Alicia Roldan",
+    "nombre": " DRA Alicia Roldan",
     "especialidad": "Nutricionista"
 },
 {
     "id": 6,
-    "nombre": "Lucas Fernandez",
+    "nombre": "DR Lucas Fernandez",
     "especialidad": "Neumonologia"
 },
 {
     "id": 7,
-    "nombre": "Patricia Aranguren",
+    "nombre": " DRA Patricia Aranguren",
     "especialidad": "Oftalmologia"
 },
 {
     "id": 8,
-    "nombre": "Juana Fernandez ",
-    "especialidad": "Pediatría General"    
+    "nombre": "DRA Juana Fernandez ",
+    "especialidad": "Pediatria General"    
 },
 {
     "id": 9,
-    "nombre": "Alejandro Martinez",
-    "especialidad": "Oftalmología"    
+    "nombre": "Dr Alejandro Martinez",
+    "especialidad": "Oftalmologia"    
 },
 {
     "id": 10,
-    "nombre": "Florencia Marchetto",
-    "especialidad": "Neumonología"
+    "nombre": " DRA Florencia Marchetto",
+    "especialidad": "Neumonologia"
     
 },
 {
     "id": 11,
-    "nombre": "Pablo Moreno",
-    "especialidad": "Neonatología"
+    "nombre": " DR Pablo Moreno",
+    "especialidad": "Neonatologia"
     
 }
 
