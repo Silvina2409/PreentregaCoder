@@ -40,6 +40,13 @@ profesionales.forEach((profesional) =>{
 const formulario = document.getElementById("formulario")
 formulario.addEventListener("submit", (e) =>{
     crearPaciente(e)
+    Swal.fire({
+        
+        icon: "success",
+        title: "Has enviado  el formulario",
+        showConfirmButton: false,
+        timer: 1500
+      });
 })
 function crearPaciente (e){
     e.preventDefault()
@@ -69,14 +76,41 @@ let conta= 0
 let suma= 0
 let compra= document.querySelector("#probando")
 compra.addEventListener("click",() =>{
-    let circulo= document.querySelector(".circulo")
-    conta ++
-    circulo.innerHTML= conta 
-    let agrego= document.querySelector("#total")
-    suma= suma + 5000
-    agrego.innerText = `El total a abonar es $ ${suma}. Le escribiremos para programar su turno y realizar el pago. Muchas gracias.`
-    
-    
+   
+  
+      Swal.fire({
+        background: " #faf3eb",
+        imageUrl: "./Img/baby.png",
+        imageWidth: 200,
+        icon: "question",   
+        position: "top-end",
+        title: "Va a realizar una consulta profesional",
+        text: "¿Está seguro?",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonText: "No",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si"
+       
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            background: " #faf3eb",
+            position: "top-end",
+            title: "Muchas Gracias",
+            text: "Has solicitado una consulta",
+            icon: "success",
+            imageUrl: "./Img/baby.png",
+            imageWidth: 200,
+          });
+          let circulo= document.querySelector(".circulo")
+          conta ++
+          circulo.innerHTML= conta 
+          let agrego= document.querySelector("#total")
+          suma= suma + 5000
+          agrego.innerText = `El total a abonar es $ ${suma}. Le escribiremos para programar su turno y realizar el pago. Muchas gracias.`
+        }
+      });
 })
 }
 sumar()
@@ -119,7 +153,6 @@ inputBusqueda.addEventListener ("change", () =>{
     })    
     
 })
-
 
 
 
