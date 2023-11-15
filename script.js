@@ -41,7 +41,6 @@ const formulario = document.getElementById("formulario")
 formulario.addEventListener("submit", (e) =>{
     crearPaciente(e)
     Swal.fire({
-        
         icon: "success",
         title: "Has enviado  el formulario",
         showConfirmButton: false,
@@ -117,26 +116,27 @@ sumar()
 
 
 //Buscador
-
+/*
 async function listarProfesionales () {
     const respuesta = await fetch ("./profes.json")
     const prof = await respuesta.json()
     mostrarProfesionales (prof)
-}
+}*/
 
 const contened = document.getElementById("contenedor")
-
 function mostrarProfesionales (prof){
-    
+ 
     prof.forEach((ele => {
         let divMed = document.createElement ("div")
-        divMed.innerHTML= `<div> ${ele.nombre} </div>
-                           <div> ${ele.especialidad} </div> `
+        divMed.innerHTML= ` <div class="alineacion6">
+                            <div class="nombre"> ${ele.nombre} </div>
+                           <div class="especialidad"> ${ele.especialidad} </div> </div>`
     contened.appendChild (divMed)
   
 }))
 }
 const inputBusqueda= document.getElementById ("inputSearch")
+function buscar(){
 inputBusqueda.addEventListener ("change", () =>{
     const inputV = inputBusqueda.value
     console.log (inputV)
@@ -147,13 +147,15 @@ inputBusqueda.addEventListener ("change", () =>{
         if (profesionalesFiltrados.length > 0){
         mostrarProfesionales(profesionalesFiltrados)
     }else{
+        setTimeout(()=>{
         contened.innerText = "Lamentablemente no contamos con esa especialidad"
-    }
-        
+        },1000 )}
+       
     })    
-    
+  
 })
-
+}
+buscar()
 
 
 
