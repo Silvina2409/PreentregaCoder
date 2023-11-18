@@ -24,7 +24,7 @@ h1{
 ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     font-size: 30px;
     background-color: rgb(135, 183, 245);
@@ -180,14 +180,16 @@ li{
 
 .alineacion7{
     display: flex;
-    flex-direction: column;
-    align-items: start;
+   justify-content: space-between; 
+   margin-left: 50px;
+   margin-right: 50px;
+   padding-top: 10px;
    
-    gap: 5px;
-    margin-left: 100px ;
+   
+    
 }
 .tamano{
-    font-size: 15px;
+    font-size: 20px;
 }
 .titulo1{
     font-size: 25px;
@@ -196,4 +198,10 @@ li{
 }
 .fondo{
     background-color:rgb(135, 183, 245); 
+    padding-bottom: 30px;
+}
+.alineacion8{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
