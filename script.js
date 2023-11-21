@@ -116,12 +116,7 @@ sumar()
 
 
 //---------------------------------------------------Buscador----------------------------------------------------------
-/*
-async function listarProfesionales () {
-    const respuesta = await fetch ("./profes.json")
-    const prof = await respuesta.json()
-    mostrarProfesionales (prof)
-}*/
+
 
 const contened = document.getElementById("contenedor")
 function mostrarProfesionales (prof){
