@@ -2,56 +2,67 @@
 {
     "id": 1,
     "nombre": "DRA Susana Perez",
-    "especialidad": "Gastroenterologia"
+    "especialidad": "Gastroenterologia",
+    "especialidadBusqueda": "gastroenterologia"
 },
 {
     "id": 2,
     "nombre": "DR Fabian Gomez",
-    "especialidad": "Neumonologia"
+    "especialidad": "Neumonologia",
+    "especialidadBusqueda": "neumonologia"
 },
 {   "id": 3,
     "nombre": " DRA Luciana Ramos",
-    "especialidad": "Pediatria General"
+    "especialidad": "Pediatria General",
+    "especialidadBusqueda": "pediatria general"
 },
 {    "id": 4,
     "nombre": "DR Ramiro Puertas",
-    "especialidad": "Infectologia"
+    "especialidad": "Infectologia",
+    "especialidadBusqueda": "infectologia"
 },
 {
     "id": 5,
     "nombre": " DRA Alicia Roldan",
-    "especialidad": "Nutricionista"
+    "especialidad": "Nutricionista",
+    "especialidadBusqueda": "nutricionista"
 },
 {
     "id": 6,
     "nombre": "DR Lucas Fernandez",
-    "especialidad": "Neumonologia"
+    "especialidad": "Neumonologia",
+    "especialidadBusqueda": "neumonologia"
 },
 {
     "id": 7,
     "nombre": " DRA Patricia Aranguren",
-    "especialidad": "Oftalmologia"
+    "especialidad": "Oftalmologia",
+    "especialidadBusqueda": "oftalmologia"
 },
 {
     "id": 8,
     "nombre": "DRA Juana Fernandez ",
-    "especialidad": "Pediatria General"    
+    "especialidad": "Pediatria General",
+    "especialidadBusqueda": "pediatria general"   
 },
 {
     "id": 9,
     "nombre": "Dr Alejandro Martinez",
-    "especialidad": "Oftalmologia"    
+    "especialidad": "Oftalmologia",
+    "especialidadBusqueda": "oftalmologia"    
 },
 {
     "id": 10,
     "nombre": " DRA Florencia Marchetto",
-    "especialidad": "Neumonologia"
+    "especialidad": "Neumonologia",
+    "especialidadBusqueda": "neumonologia"
     
 },
 {
     "id": 11,
     "nombre": " DR Pablo Moreno",
-    "especialidad": "Neonatologia"
+    "especialidad": "Neonatologia",
+    "especialidadBusqueda": "neonatologia"
     
 }
 

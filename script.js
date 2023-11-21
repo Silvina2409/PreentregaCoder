@@ -125,7 +125,7 @@ async function listarProfesionales () {
 
 const contened = document.getElementById("contenedor")
 function mostrarProfesionales (prof){
- 
+     contened.innerHTML= ""
     prof.forEach((ele => {
         let divMed = document.createElement ("div")
         divMed.innerHTML= ` <div class="alineacion6">
@@ -138,20 +138,22 @@ function mostrarProfesionales (prof){
 const inputBusqueda= document.getElementById ("inputSearch")
 function buscar(){
 inputBusqueda.addEventListener ("change", () =>{
-    const inputV = inputBusqueda.value
-    console.log (inputV)
+    const inputV = inputBusqueda.value.trim()
+    if(inputV.length== 0){
+        contened.innerHTML = ""
+        return
+    }
     fetch ("./profes.json")
     .then (response => response.json())
     .then (data => {
-        const profesionalesFiltrados = data.filter ((prof) => prof.especialidad.includes (inputV))
+        const profesionalesFiltrados = data.filter ((prof) => prof.especialidadBusqueda.includes (inputV.toLowerCase()))
         if (profesionalesFiltrados.length > 0){
         mostrarProfesionales(profesionalesFiltrados)
     }else{
-        setTimeout(()=>{
-        contened.innerText = "Lamentablemente no contamos con esa especialidad"
-        },1000 )}
-       
-    })    
+           contened.innerText = "Lamentablemente no contamos con esa especialidad"
+        
+    }
+})    
   
 })
 }
